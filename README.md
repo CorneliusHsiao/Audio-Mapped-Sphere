@@ -3,4 +3,5 @@ This is a project of Computer Graphics course offered in Fall 2017 at RPI. The m
 
 ## Contact
 Hanyuan (Cornelius) Xiao: corneliushsiao[AT]gmaildotcom
+
 Junhao (Harry) Xu: xuj10[AT]rpidotedu
