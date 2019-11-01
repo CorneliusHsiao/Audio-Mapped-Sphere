@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Mapped Sphere</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="index_files/materialize.min.css"  media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <audio id="audioSource">
+            Oops ... your browser doesn't support the HTML5 canvas element
+        </audio>
+    </head>
+    <body>
+        <h1 align="center">Audio Mapped Sphere (CG Course Project)</h1>
+        <div>
+            <div align="center">
+                Choose a music file to start. Support mp3, flac and ogg format.
+                <br>
+                <input type="file" id="fileSelector">
+            </div>
+            <div class="progress">
+                <div class="determinate" style="width: 0%" id="progress"></div>
+            </div>
+            <div align="center">
+                <span id="currentTime"></span>
+                <span id="timer"></span>
+                <span id="totalTime"></span>
+            </div>
+            <div align="center">
+                <a class="waves-effect waves-light btn" id="backwardButton">
+                    <i class="material-icons">fast_rewind</i>
+                </a>
+                <a class="waves-effect waves-light btn" id="playButton">
+                    PLAY/PAUSE
+                </a>
+                <a class="waves-effect waves-light btn" id="forwardButton">
+                    <i class="material-icons">fast_forward</i>
+                </a>
+            </div>
+            <div id="mainBody" align="center">
+                <canvas id="preview">
+                    Oops ... your browser doesn't support the HTML5 canvas element
+                </canvas>
+                <br>
+            </div>
+        </div>
+        <script src="index_files/three.min.js"></script>
+        <script src="index_files/OrbitControls.js"></script>
+        <script src="index_files/AudioAnalyserAndCanvasRender.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index_files/materialize.min.js"></script>
+    </body>
+</html>
